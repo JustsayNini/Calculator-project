@@ -1,0 +1,146 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(47, 47, 47);
+}
+
+#calculator-box{
+    width: 35vw;
+    height: 93vh;
+    border:0.01vw solid rgb(78, 0, 0);
+    border-radius: 2vw;
+    margin: 3vh 33vw;
+    background-image: linear-gradient(to right, #401010,rgb(116, 31, 31),rgb(116, 31, 31), rgb(116, 31, 31), rgb(116, 31, 31),rgb(116, 31, 31),rgb(116, 31, 31),rgb(116, 31, 31), rgb(64, 16, 16));
+    box-shadow: rgb(43, 39, 39) 2vw 2vh;
+}
+
+#screen-box{
+    width: 80%;
+    min-height: 20%;
+    border: 0.5vw inset grey;
+    border-radius: 2vw;
+    background-color: rgb(120, 134, 110);
+    margin: 2vw auto;
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+
+}
+
+#screen-box img{
+    width: 20%;
+    height: auto;
+    animation: blinkingCursor 1s linear infinite;
+}
+
+@keyframes blinkingCursor {
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+
+#button-box{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.button-row{
+    height: 17%;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto 2vw;
+}
+
+.button-row button{
+    border: 2px outset #540f0f;
+    border-radius: 1vw;
+    background-color: #540f0f;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.button-row div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.button-row div button{
+    border: 2px outset #540f0f;
+    border-radius: 1vw;
+    background-color: #540f0f;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 2vw;
+}
+
+#clear-button{
+    font-size: 1vw;
+    width: 5vw;
+}
+
+
+@media screen and (max-width:1200px){
+
+    #calculator-box{
+        width: 70vh;
+        margin: 3vh 23vw;
+        
+    }
+
+    .button-row button{
+        font-size: 3.5vw;
+
+    }
+
+    .button-row div button{
+        width: 8vw;
+        font-size: 3vw;
+    }
+
+    #clear-button{
+        font-size: 2vw;
+        width: 8vw;
+    }
+}
+
+@media screen and (max-width:1020px) {
+
+    body{
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+    
+    #calculator-box{
+        width: 100%;
+        margin: 0;
+        height: 100vh;
+    }
+
+    .button-row button{
+        font-size: 5vw;
+
+    }
+
+    .button-row div button{
+        width: 12vw;
+        font-size: 6vw;
+    }
+
+    #clear-button{
+        font-size: 4vw;
+        width: 12vw;
+    }
+
+}
