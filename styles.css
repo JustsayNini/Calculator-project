@@ -16,6 +16,7 @@ body{
     margin: 3vh 33vw;
     background-image: linear-gradient(to right, #401010,rgb(116, 31, 31),rgb(116, 31, 31), rgb(116, 31, 31), rgb(116, 31, 31),rgb(116, 31, 31),rgb(116, 31, 31),rgb(116, 31, 31), rgb(64, 16, 16));
     box-shadow: rgb(43, 39, 39) 2vw 2vh;
+    overflow: hidden;
 }
 
 #screen-box{
@@ -23,23 +24,17 @@ body{
     min-height: 20%;
     border: 0.5vw inset grey;
     border-radius: 2vw;
-    background-color: rgb(120, 134, 110);
+    background-color: #78866e;
     margin: 2vw auto;
     margin-top: 3vh;
+    padding: 3vw;
     display: flex;
     align-items: center;
+    font-size: 3vw;
+    font-weight: bold;
+    color: #20241d;
+    outline: none;
 
-}
-
-#screen-box img{
-    width: 20%;
-    height: auto;
-    animation: blinkingCursor 1s linear infinite;
-}
-
-@keyframes blinkingCursor {
-    from{opacity: 1;}
-    to{opacity: 0;}
 }
 
 #button-box{
@@ -65,6 +60,15 @@ body{
     height: 100%;
     text-align: center;
     font-size: 2vw;
+}
+
+.button-row button:hover{
+    cursor: pointer;
+    background-color: #401010;
+}
+
+.button-row button:active{
+    background-color: #903333;
 }
 
 .button-row div{

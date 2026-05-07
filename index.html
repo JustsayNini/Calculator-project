@@ -11,40 +11,38 @@
 
     <div id="calculator-box">
 
-        <div id="screen-box">
-            <img src="img/image-removebg-preview.png" alt="">
-        </div>
+        <input id="screen-box" readonly>
 
         <div id="button-box">
 
             <div class="button-row">
-                <button type="button"> 7 </button>
-                <button type="button"> 8 </button>
-                <button type="button"> 9 </button>
-                <button type="button"> + </button>
+                <button type="button" class="btn" id="seven" onclick="display('7')"> 7 </button>
+                <button type="button" class="btn" id="eight" onclick="display('8')"> 8 </button>
+                <button type="button" class="btn" id="nine" onclick="display('9')"> 9 </button>
+                <button type="button" class="btn" id="plus" onclick="display('+')"> + </button>
             </div>
 
             <div class="button-row">
-                <button type="button"> 4 </button>
-                <button type="button"> 5 </button>
-                <button type="button"> 6 </button>
-                <button type="button"> - </button>
+                <button type="button" class="btn" id="four" onclick="display('4')"> 4 </button>
+                <button type="button" class="btn" id="five" onclick="display('5')"> 5 </button>
+                <button type="button" class="btn" id="six" onclick="display('6')"> 6 </button>
+                <button type="button" class="btn" id="minus" onclick="display('-')"> - </button>
             </div>
 
             <div class="button-row">
-                <button type="button"> 1 </button>
-                <button type="button"> 2 </button>
-                <button type="button"> 3 </button>
-                <button type="button"> &divide; </button>
+                <button type="button" class="btn" id="one" onclick="display('1')"> 1 </button>
+                <button type="button" class="btn" id="two" onclick="display('2')"> 2 </button>
+                <button type="button" class="btn" id="three" onclick="display('3')"> 3 </button>
+                <button type="button" class="btn" id="divide" onclick="display('/')"> &divide; </button>
             </div>
 
             <div class="button-row">
-                <button type="button"> 0 </button>
-                <button type="button"> . </button>
-                <button type="button"> = </button>
+                <button type="button" class="btn" id="zero" onclick="display('0')"> 0 </button>
+                <button type="button" class="btn" id="period" onclick="display('.')"> . </button>
+                <button type="button" class="btn" id="equal" onclick="calculate()"> = </button>
                 <div>
-                    <button type="button"> &times; </button>
-                    <button type="button" id="clear-button"> Clear </button>
+                    <button type="button" class="btn" id="times" onclick="display('*')"> &times; </button>
+                    <button type="button" class="btn" id="clear-button" onclick="clearDisplay()"> Clear </button>
                 </div>
             </div>
 
@@ -53,4 +51,6 @@
     </div>
     
 </body>
+
+<script src="index.js"></script>
 </html>
