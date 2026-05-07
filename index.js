@@ -5,7 +5,9 @@ function display(input){
 }
 
 function calculate(){
+
     try{
+        
         displayScreen.value = eval(displayScreen.value)
     }
 
@@ -14,6 +16,8 @@ function calculate(){
     }
     
 }
+
+
 
 function clearDisplay(){
     displayScreen.value = ""
